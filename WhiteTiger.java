@@ -23,7 +23,7 @@ public class WhiteTiger extends Tiger {
 
         if (info.getFront() == Neighbor.OTHER) {
             isInfected = true;
-            return  Action.INFECT;
+            return Action.INFECT;
         }
         return super.getMove(info);
     }

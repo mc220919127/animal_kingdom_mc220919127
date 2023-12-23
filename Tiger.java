@@ -5,6 +5,7 @@ public class Tiger extends Critter {
     private final Color[] colors = {Color.RED, Color.GREEN, Color.BLUE};
     private Color currentColor;
     int count = 0;
+    Random random = new Random();
 
     public Tiger() {
         chooseRandomColor();
@@ -41,7 +42,6 @@ public class Tiger extends Critter {
     }
 
     private void chooseRandomColor() {
-        Random random = new Random();
         currentColor = colors[random.nextInt(colors.length)];
     }
 }
